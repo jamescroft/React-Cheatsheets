@@ -60,17 +60,21 @@
             <a class="hash-link" href="#react-component">#</a>
           </h1>
           <p>The basic React component structure.</p>
-          <pre>
-
+        <div class="zero-clipboard">
+          <button class="btn btn-primary code-copy" id="copy-button" title="Click to copy me.">Copy</button>
+        </div>
+            <pre id="test-pre">
             var Component = React.createClass({
               render: function() {
                 return (
                 )
               }
             });
+            
           </pre>
 
-
+             
+            
         </div>
 
         <hr class="short-break" />
@@ -124,15 +128,10 @@
         <hr class="short-break" />
 
 
-        <div id="d_clip_button" class="clip_button" data-clipboard-text="Copy Me!" title="Click to copy." style="border:1px solid black; padding:20px;">Copy To Clipboard</div>
+        
 
-            <script type="text/javascript" src="ZeroClipboard.js"></script>
-            <script type="text/javascript">
-
-                $(document).ready(function() {
-                    var client = new ZeroClipboard( document.getElementById('d_clip_button') );
-                });
-            </script>
+            <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+            <script src="js/main.js"></script>
       </div>
   </div>
 

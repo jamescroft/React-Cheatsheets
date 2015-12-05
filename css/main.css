@@ -45,6 +45,17 @@
   font-size: 16px;
 }
 
+.zero-clipboard {
+    position: relative;
+}
+
+.item .code-copy {
+    float: right;
+    position:absolute;
+    right:0;
+    top:0;
+}
+
 hr.short-break {
   margin: 75px auto;
   width: 200px;
