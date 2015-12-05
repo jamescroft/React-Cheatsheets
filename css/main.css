@@ -22,9 +22,27 @@
   font-size: 44px;
 }
 
+.react-search {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .item {
   padding-bottom: 50px;
+}
 
+.item h1 .anchor {
+  margin-top: -70px;
+  position: absolute;
+}
+
+.item h1 .hash-link {
+  font-style: italic;
+  color: #ccc;
+}
+
+.item pre {
+  font-size: 16px;
 }
 
 hr.short-break {

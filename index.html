@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -34,7 +34,7 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">About</a></li>
+              <li><a href="https://facebook.github.io/react/index.html">Official site</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -44,7 +44,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1> <img class="nav-logo" src="images/react.png" width="75" height="75"> React Cheat Sheets <small>v0.14.3</small></h1>
-        <div class="input-group">
+        <div class="input-group react-search">
           <span class="input-group-addon" id="basic-addon3">Search for...</span>
           <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
         </div>
@@ -52,25 +52,87 @@
     </div>
     <div class="main">
       <div class="container">
+
         <div class="item">
-          <h1>Item 1</h1>
-          <p>Item descrption.</p>
-          <pre>&lt;p&gt;Sample code here...&lt;/p&gt;</pre>
+          <h1>
+            <a class="anchor" name="react-component"></a>
+            React Component
+            <a class="hash-link" href="#react-component">#</a>
+          </h1>
+          <p>The basic React component structure.</p>
+          <pre>
+
+            var Component = React.createClass({
+              render: function() {
+                return (
+                )
+              }
+            });
+          </pre>
+
+
         </div>
+
         <hr class="short-break" />
 
         <div class="item">
-          <h1>Item 2</h1>
-          <p>Item descrption.</p>
-          <pre>&lt;p&gt;Sample code here...&lt;/p&gt;</pre>
+          <h1>
+            <a class="anchor" name="hello-world"></a>
+            Hello World
+            <a class="hash-link" href="#hello-world">#</a>
+          </h1>
+          <p>A basic "Hello World" component.</p>
+          <pre>
+
+            var Hello = React.createClass({
+                render: function() {
+                    return &lt;div&gt;Hello {this.props.name}&lt;/div&gt;;
+                }
+            });
+
+            ReactDOM.render(
+            	&lt;Hello name="World" /&gt;,
+                document.getElementById('container')
+            );
+          </pre>
         </div>
+
+        <hr class="short-break" />
 
         <div class="item">
-          <h1>Item 3</h1>
+          <h1>
+            <a class="anchor" name="item3"></a>
+            Item 3
+            <a class="hash-link" href="#item3">#</a>
+          </h1>
           <p>Item descrption.</p>
           <pre>&lt;p&gt;Sample code here...&lt;/p&gt;</pre>
         </div>
 
+        <hr class="short-break" />
+
+        <div class="item">
+          <h1>
+            <a class="anchor" name="item4"></a>
+            Item 4
+            <a class="hash-link" href="#item4">#</a>
+          </h1>
+          <p>Item descrption.</p>
+          <pre>&lt;p&gt;Sample code here...&lt;/p&gt;</pre>
+        </div>
+
+        <hr class="short-break" />
+
+
+        <div id="d_clip_button" class="clip_button" data-clipboard-text="Copy Me!" title="Click to copy." style="border:1px solid black; padding:20px;">Copy To Clipboard</div>
+
+            <script type="text/javascript" src="ZeroClipboard.js"></script>
+            <script type="text/javascript">
+
+                $(document).ready(function() {
+                    var client = new ZeroClipboard( document.getElementById('d_clip_button') );
+                });
+            </script>
       </div>
   </div>
 
