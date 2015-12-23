@@ -1,12 +1,13 @@
 
 
-var client = new ZeroClipboard( document.getElementById("copy-button") );
+var client = new ZeroClipboard( $(".copy-button") );
 
 client.on( "ready", function( readyEvent ) {
 
    client.on( "copy", function (event) {
      var clipboard = event.clipboardData;
-     var codeSnippet = document.getElementById("test-pre").innerHTML;
+     var codeSnippet = $(this).parent(".zero-clipboard").html();
+       console.log(codeSnippet);
      clipboard.setData( "text/plain", codeSnippet );
      
    });
