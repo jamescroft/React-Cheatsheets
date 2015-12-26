@@ -16,10 +16,12 @@ client.on( "ready", function( readyEvent ) {
     // `this` === `client`
     // `event.target` === the element that was clicked
     event.target.style.backgroundColor = "green";
+    event.target.style.color = "#fff";
     event.target.textContent = "Copied!";
     setTimeout(function(){ 
-        event.target.style.backgroundColor = "#337ab7";
-        event.target.textContent = "Copy";
+        event.target.style.backgroundColor = "transparent";
+        event.target.style.color = "#000";
+        event.target.textContent = "Copy to clipboard";
     }, 2000);
   } );
 } );

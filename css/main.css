@@ -62,6 +62,37 @@
   margin: 0 auto;
 }
 
+.code-example pre {
+    position: relative;
+    margin-bottom: 14px;
+    padding: 40px 14px 14px!important;
+    border: none;
+    border-radius: 0;
+    overflow: auto;
+    margin-top: 30px!important;
+}
+
+.code-example pre:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #484848;
+    background-color: #f1ede4;
+    content: "Code";
+}
+
+.code-example pre {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+}
+
 .zero-clipboard {
     position: relative;
 }
@@ -69,8 +100,10 @@
 .item .code-copy {
     float: right;
     position:absolute;
-    right:0;
-    top:0;
+    right:1px;
+    top:1px;
+    z-index: 9999;
+    background-color: transparent;
 }
 
 hr.short-break {
