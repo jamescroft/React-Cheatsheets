@@ -59,4 +59,10 @@ hr.short-break {
   color: #818a91;
   background-color: transparent;
   border: 0;
+  border-radius: 0.25rem;
+}
+
+.btn-clipboard:hover {
+  color: #fff;
+  background-color: #027de7;
 }
