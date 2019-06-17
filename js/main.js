@@ -1,21 +1,24 @@
 
 
-var client = new ZeroClipboard( document.getElementById("copy-button") );
+var clipboard = new ClipboardJS('.btn-clipboard');
 
-client.on( "ready", function( readyEvent ) {
-   alert( "ZeroClipboard SWF is ready!" );
+$(function () {
+    $(".rcs-clipboard").tooltip({
+        placement: "top",
+        title: "Copy to clipboard",
+    });
+})
 
-   client.on( "copy", function (event) {
-     var clipboard = event.clipboardData;
-     clipboard.setData( "text/plain", "Copy me!" );
-     clipboard.setData( "text/html", "<b>Copy me!</b>" );
-     clipboard.setData( "application/rtf", "{\\rtf1\\ansi\n{\\b Copy me!}}" );
-   });
+clipboard.on('success', function(e) {
+    console.log(e);
+    e.clearSelection();
+    $(".rcs-clipboard").attr('data-original-title', "Copied!").tooltip('show');
+});
 
-  client.on( "aftercopy", function( event ) {
-    // `this` === `client`
-    // `event.target` === the element that was clicked
-    event.target.style.display = "none";
-    alert("Copied text to clipboard: " + event.data["text/plain"] );
-  } );
-} );
+$(".rcs-clipboard").mouseout(function(){
+    $(".rcs-clipboard").attr('data-original-title', "Copy to clipboard").tooltip('hide');
+})
+
+clipboard.on('error', function(e) {
+    console.log(e);
+});
