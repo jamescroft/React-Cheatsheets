@@ -10,18 +10,40 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <title>React Cheatsheets v16.8.6</title>
+  <!-- Syntax Highlight -- needs optimizing -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism-okaidia.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-javascript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-markup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-jsx.js"></script>
+ 
+  <title>React Cheat Sheets</title>
 
 </head>
 
 <body>
 
   <div class="jumbotron">
-    <h1 class="display-4">React</h1>
-    <p class="lead">Cheat Sheets v16.8.6</p>
+    <h1 class="display-4">React Cheat Sheets</h1>
+    <p class="lead">Based on React v16.8.6</p>
   </div>
   <div class="main">
     <div class="container">
+
+        <div class="item">
+            <h1>
+              <a class="anchor" name="hello-world"></a>
+              Hello World
+              <a class="hash-link" href="#hello-world">#</a>
+            </h1>
+            <div class="rcs-clipboard"> <button class="btn-clipboard" data-toggle="tooltip" title="Copy to clipboard"
+                data-clipboard-action="copy" data-clipboard-target="pre.hello-world">Copy</button>
+            </div>
+            <p>The smallest React example.</p>
+            <pre class="hello-world language-jsx" data-src="hello-world.jsx"></pre>
+            <a href="https://reactjs.org/docs/hello-world.html" target="_blank">[Hello World on React Documentation site]</a>
+          </div>
+          <hr class="short-break" />
 
       <div class="item">
         <h1>
@@ -29,18 +51,13 @@
           React Component
           <a class="hash-link" href="#react-component">#</a>
         </h1>
-        <div class="rcs-clipboard"> <button class="btn-clipboard" data-toggle="tooltip" title="Copy to clipboard" data-clipboard-action="copy"
-            data-clipboard-target="pre.basic-example">Copy</button>
+        <div class="rcs-clipboard"> <button class="btn-clipboard" data-toggle="tooltip" title="Copy to clipboard"
+            data-clipboard-action="copy" data-clipboard-target="pre.basic-example">Copy</button>
         </div>
 
-        <p>The basic React component structure.</p>
+        <p>A basic React component structure.</p>
 
-        <pre class="basic-example">
-class Welcome extends React.Component {
-  render() {
-    return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;;
-  }
-}</pre>
+        <pre class="basic-example language-jsx" data-src="basic-component.jsx"></pre>
 
       </div>
       <hr class="short-break" />
@@ -57,13 +74,12 @@ class Welcome extends React.Component {
 
         <p>The basic React component structure.</p>
 
-        <pre class="basic-example2">
-2222var Component = React.createClass({
+        <pre class="basic-example2"><code>2222var Component = React.createClass({
   render: function() {
     return (
     )
   }
-});</pre>
+});</code></pre>
 
       </div>
 
@@ -87,6 +103,7 @@ class Welcome extends React.Component {
   </script>
   <script src="js/clipboard.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
