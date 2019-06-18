@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <title>React Cheatsheets</title>
+  <title>React Cheatsheets v16.8.6</title>
 
 </head>
 
@@ -18,7 +18,7 @@
 
   <div class="jumbotron">
     <h1 class="display-4">React</h1>
-    <p class="lead">Cheat Sheets</p>
+    <p class="lead">Cheat Sheets v16.8.6</p>
   </div>
   <div class="main">
     <div class="container">
@@ -29,19 +29,18 @@
           React Component
           <a class="hash-link" href="#react-component">#</a>
         </h1>
-        <div class="rcs-clipboard"> <button class="btn-clipboard" data-clipboard-action="copy"
+        <div class="rcs-clipboard"> <button class="btn-clipboard" data-toggle="tooltip" title="Copy to clipboard" data-clipboard-action="copy"
             data-clipboard-target="pre.basic-example">Copy</button>
         </div>
 
         <p>The basic React component structure.</p>
 
         <pre class="basic-example">
-var Component = React.createClass({
-  render: function() {
-    return (
-    )
+class Welcome extends React.Component {
+  render() {
+    return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;;
   }
-});</pre>
+}</pre>
 
       </div>
       <hr class="short-break" />
