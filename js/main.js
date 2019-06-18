@@ -3,7 +3,8 @@
 $('.btn-clipboard').tooltip({
     trigger: 'hover',
     placement: 'top',
-    title: 'Copy to clipboard'
+    title: 'Copy to clipboard',
+    offset: '0, 10'
   });
   
   function setTooltip(message) {

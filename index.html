@@ -9,14 +9,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Syntax Highlight -- needs optimizing -->
+  <!-- Syntax Highlight -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism-okaidia.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-javascript.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-markup.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-jsx.js"></script>
- 
+  <!-- Custom CSS-->
+  <link rel="stylesheet" href="css/main.css">
+
   <title>React Cheat Sheets</title>
 
 </head>
@@ -30,20 +27,20 @@
   <div class="main">
     <div class="container">
 
-        <div class="item">
-            <h1>
-              <a class="anchor" name="hello-world"></a>
-              Hello World
-              <a class="hash-link" href="#hello-world">#</a>
-            </h1>
-            <div class="rcs-clipboard"> <button class="btn-clipboard" data-toggle="tooltip" title="Copy to clipboard"
-                data-clipboard-action="copy" data-clipboard-target="pre.hello-world">Copy</button>
-            </div>
-            <p>The smallest React example.</p>
-            <pre class="hello-world language-jsx" data-src="hello-world.jsx"></pre>
-            <a href="https://reactjs.org/docs/hello-world.html" target="_blank">[Hello World on React Documentation site]</a>
-          </div>
-          <hr class="short-break" />
+      <div class="item">
+        <h1>
+          <a class="anchor" name="hello-world"></a>
+          Hello World
+          <a class="hash-link" href="#hello-world">#</a>
+        </h1>
+        <div class="rcs-clipboard"> <button class="btn-clipboard" data-toggle="tooltip" title="Copy to clipboard"
+            data-clipboard-action="copy" data-clipboard-target="pre.hello-world">Copy</button>
+        </div>
+        <p>The smallest React example. <a href="https://reactjs.org/docs/hello-world.html" target="_blank">[Read
+            docs]</a></p>
+        <pre class="hello-world language-jsx" data-src="examples/hello-world.jsx"></pre>
+      </div>
+      <hr class="short-break" />
 
       <div class="item">
         <h1>
@@ -54,43 +51,43 @@
         <div class="rcs-clipboard"> <button class="btn-clipboard" data-toggle="tooltip" title="Copy to clipboard"
             data-clipboard-action="copy" data-clipboard-target="pre.basic-example">Copy</button>
         </div>
-
-        <p>A basic React component structure.</p>
-
-        <pre class="basic-example language-jsx" data-src="basic-component.jsx"></pre>
-
+        <p>A basic React component structure. <a href="https://reactjs.org/docs/react-component.html#overview"
+            target="_blank">[Read docs]</a></p>
+        <pre class="basic-example language-jsx" data-src="examples/basic-component.jsx"></pre>
       </div>
       <hr class="short-break" />
 
       <div class="item">
         <h1>
-          <a class="anchor" name="react-component2"></a>
-          React Component 2
-          <a class="hash-link" href="#react-component2">#</a>
+          <a class="anchor" name="react-state-hook"></a>
+          State Hooks
+          <a class="hash-link" href="#react-state-hook">#</a>
         </h1>
-        <div class="rcs-clipboard"> <button class="btn-clipboard" data-clipboard-action="copy"
-            data-clipboard-target="pre.basic-example2">Copy</button>
+        <div class="rcs-clipboard"> <button class="btn-clipboard" data-toggle="tooltip" title="Copy to clipboard"
+            data-clipboard-action="copy" data-clipboard-target="pre.react-state-hook">Copy</button>
         </div>
-
-        <p>The basic React component structure.</p>
-
-        <pre class="basic-example2"><code>2222var Component = React.createClass({
-  render: function() {
-    return (
-    )
-  }
-});</code></pre>
-
+        <p>Hooks are a new addition in React 16.8. They let you use state and other React features without writing a
+          class. <a href="https://reactjs.org/docs/hooks-intro.html" target="_blank">[Read docs]</a></p>
+        <pre class="react-state-hook language-jsx" data-src="examples/state-hook.jsx"></pre>
       </div>
-
-
-
+      <div class="item">
+        <h1>
+          <a class="anchor" name="react-effect-hook"></a>
+          Effect Hooks
+          <a class="hash-link" href="#react-effect-hook">#</a>
+        </h1>
+        <div class="rcs-clipboard"> <button class="btn-clipboard" data-toggle="tooltip" title="Copy to clipboard"
+            data-clipboard-action="copy" data-clipboard-target="pre.react-effect-hook">Copy</button>
+        </div>
+        <p>The Effect Hook lets you perform side effects in function components. <a
+            href="https://reactjs.org/docs/hooks-effect.html" target="_blank">[Read docs]</a></p>
+        <pre class="react-effect-hook language-jsx" data-src="examples/effect-hook.jsx"></pre>
+      </div>
       <hr class="short-break" />
 
     </div>
   </div>
 
-  <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -101,6 +98,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <!--Syntax highlighting with Prism.js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-javascript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-markup.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-jsx.js"></script>
   <script src="js/clipboard.min.js"></script>
   <script src="js/main.js"></script>
 
